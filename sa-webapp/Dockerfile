@@ -1,10 +1,15 @@
-FROM golang:1.12
-
+# Build stage
+FROM golang:1.12 as builder
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
-COPY $PWD/webapp.go ./
+COPY webapp.go ./
+ENV CGO_ENABLED=0
 RUN go build -o webapp .
-EXPOSE 8080
 
+# Final stage
+FROM alpine
+WORKDIR /app
+COPY --from=builder /app/webapp /app/
+EXPOSE 8080
 CMD ["./webapp"]
