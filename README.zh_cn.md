@@ -8,8 +8,8 @@
 - Python
     - Flask
     - SnowNLP
-- PHP
-    - Laravel
+- Golang
+    - Gin
 - Vue.js
 - Docker
 - Kubernetes
