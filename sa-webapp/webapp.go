@@ -21,7 +21,7 @@ type AnalyseSentimentData struct {
 
 type Sentiment struct {
 	Sentence   string  `json:"sentence"`
-	Sentiments float32 `json:"sentiments"`
+	Sentiments float64 `json:"sentiments"`
 }
 
 func sendAnalyseRequest(reqData *AnalyseSentimentData) ([]byte, error) {
