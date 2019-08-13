@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
@@ -44,12 +45,24 @@ func analyseSentiment(reqData *AnalyseSentimentData) *AnalyseSentimentResponse {
 
 func main() {
 	router := gin.Default()
+	// 开启 cors
+	corsConfig := cors.DefaultConfig()
+	corsConfig.AllowAllOrigins = true
+	router.Use(cors.New(corsConfig))
+
 	router.POST("/analyse", func(c *gin.Context) {
 		reqData := &AnalyseSentimentData{}
 		_ = c.BindJSON(reqData)
+		if reqData.Sentence == "" {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"msg": "缺失参数",
+			})
+			return
+		}
 		resp := analyseSentiment(reqData)
 		c.JSON(http.StatusOK, resp.Data)
 	})
+
 	err := router.Run()
 	if err != nil {
 		panic("启动失败...")
