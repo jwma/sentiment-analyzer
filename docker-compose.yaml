@@ -18,3 +18,13 @@ services:
       - 8080:8080
     environment:
       - API_HOST=http://logic:5000
+
+  frontend:
+    build:
+      context: ./sa-frontend
+      dockerfile: Dockerfile
+    depends_on:
+      - webapp
+    ports:
+      - 3000:80
+
