@@ -1,4 +1,7 @@
 # Sentiment analyzer logic
+
+[中文](README.zh_cn.md "中文") | [English](README.md "English")
+
 Sentiment analyzer main logic, Is a micro service.
 
 ## Play with Docker

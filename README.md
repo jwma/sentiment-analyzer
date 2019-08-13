@@ -1,4 +1,7 @@
 # Sentiment analyzer
+
+[中文](README.zh_cn.md "中文") | [English](README.md "English")
+
 I originally planned to develop a project about Kubernetes, 
 but I didn't think about how to cut into this big topic. 
 I was inspired by [this article](https://medium.com/free-code-camp/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882) 

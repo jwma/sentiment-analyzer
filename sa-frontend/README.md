@@ -1,4 +1,7 @@
 # Sentiment analyzer frontend
+
+[中文](README.zh_cn.md "中文") | [English](README.md "English")
+
 Sentiment analyzer frontend project, create by Vue.js.
 
 ## Play with Docker

@@ -1,4 +1,7 @@
 # Sentiment analyzer webapp
+
+[中文](README.zh_cn.md "中文") | [English](README.md "English")
+
 Sentiment analyzer API 服务，处理 `sa-frontend` 请求，调用 `sa-logic` 微服务，使用 Go 语言开发。
 
 ## 使用 Docker 运行

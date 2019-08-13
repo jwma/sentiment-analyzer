@@ -1,4 +1,7 @@
 # Sentiment analyzer webapp
+
+[中文](README.zh_cn.md "中文") | [English](README.md "English")
+
 Sentiment analyzer API layer, create by Golang.
 
 ## Play with Docker
