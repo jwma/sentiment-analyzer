@@ -13,3 +13,10 @@
 - Vue.js
 - Docker
 - Kubernetes
+
+## 使用 docker-compose 启动应用
+使用 `docker-compose up -d --build` 启动应用。
+
+在浏览器访问 `http://127.0.0.1:3000`。
+
+使用 `docker-compose down -v` 停止应用。
