@@ -23,6 +23,6 @@ curl -X POST \
 ```json
 {
     "sentence": "很酷哦",
-    "sentiments": 0.838566002771668
+    "level": 9
 }
 ```
