@@ -23,3 +23,6 @@
 在浏览器访问 `http://127.0.0.1:3000`。
 
 使用 `docker-compose down -v` 停止应用。
+
+## 截图
+![截图](screenshot.png?raw=true "截图")
