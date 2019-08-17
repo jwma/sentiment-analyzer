@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-deployment
+  name: sa-frontend-deployment
   labels:
-    app: frontend
+    app: sa-frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend
+      app: sa-frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: sa-frontend
     spec:
       containers:
-        - name: frontend
+        - name: sa-frontend
           image: studiomj/sa-frontend:1.0.0
           ports:
             - containerPort: 80
