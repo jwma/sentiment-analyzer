@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sa-frontend:1.0.0
+          image: studiomj/sa-frontend:1.0.0
           ports:
             - containerPort: 80
