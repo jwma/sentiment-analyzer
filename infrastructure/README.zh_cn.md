@@ -6,23 +6,23 @@
 
 ## 创建 Deployment
 #### sa-logic
-`kubectl apply -f sa-logic-deployment.yaml` 
+`kubectl apply -f deployment/sa-logic.yaml` 
 
 #### sa-webapp
-`kubectl apply -f infrastructure/sa-webapp-deployment.yaml`
+`kubectl apply -f deployment/sa-webapp.yaml`
 
 #### sa-frontend
-`kubectl apply -f infrastructure/sa-frontend-deployment.yaml`
+`kubectl apply -f deployment/sa-frontend.yaml`
 
 ## 创建 Service
 #### sa-logic
-`kubectl apply -f sa-logic-service.yaml` 
+`kubectl apply -f service/sa-logic.yaml` 
 
 #### sa-webapp
-`kubectl apply -f infrastructure/sa-webapp-service.yaml`
+`kubectl apply -f service/sa-webapp.yaml`
 
 #### sa-frontend
-`kubectl apply -f infrastructure/sa-frontend-service.yaml`
+`kubectl apply -f service/sa-frontend.yaml`
 
 ## 部署到 Minikube 集群
 创建一个 minikube 集群: `minikube start --memory='4000mb' --cpus=4 --image-mirror-country='cn'`

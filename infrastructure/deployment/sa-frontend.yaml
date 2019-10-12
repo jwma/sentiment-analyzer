@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sa-frontend
-          image: studiomj/sa-frontend:1.0.0
+          image: studiomj/sa-frontend:minikube
           ports:
             - containerPort: 80
