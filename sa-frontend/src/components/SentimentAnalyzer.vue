@@ -11,6 +11,8 @@
 </template>
 
 <script>
+    import {getResult} from '@/apis/analyse'
+
     export default {
         name: "SentimentAnalyzer",
         data() {
@@ -32,10 +34,9 @@
                 if (sentence === '' || sentence == null) {
                     return
                 }
-                this.$http.post('http://127.0.0.1:8080/analyse', JSON.stringify({sentence}))
-                    .then(response => {
-                        this.result = response.data
-                    })
+                getResult(sentence).then(response => {
+                    this.result = response.data
+                })
             }
         }
     }
