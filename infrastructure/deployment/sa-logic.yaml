@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sa-logic
-          image: studiomj/sa-logic:1.0.0
+          image: sa-logic:v1.0.0
           ports:
             - containerPort: 5000

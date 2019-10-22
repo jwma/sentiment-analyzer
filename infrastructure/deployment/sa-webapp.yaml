@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sa-webapp
-          image: studiomj/sa-webapp:1.0.0
+          image: sa-webapp:v1.0.0
           env:
             - name: API_HOST
               value: "http://sa-logic-service"
