@@ -1,6 +1,7 @@
 # Build stage
 FROM golang:1.12 as builder
 WORKDIR /app
+ENV GOPROXY=https://goproxy.io
 COPY go.mod go.sum ./
 RUN go mod download
 COPY webapp.go ./
