@@ -1,7 +1,7 @@
 # Build stage
 FROM node:10-alpine as builder
 
-ENV VUE_APP_API_HOST=http://localhost:8080
+ARG VUE_APP_API_HOST=http://localhost:8080
 
 WORKDIR /app
 COPY package*.json ./

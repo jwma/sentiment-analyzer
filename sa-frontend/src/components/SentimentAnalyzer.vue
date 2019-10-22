@@ -4,7 +4,8 @@
         <div class="submit-btn-container">
             <button class="submit-btn" @click="analyse">🙋🏼 点击这里 🙋🏼‍♂️</button>
         </div>
-        <div class="result-container">
+        <div class="result-container animated infinite" 
+            :class="{heartBeat: result.level != 0}">
             <span class="result-level">{{ calcLevel(result.level) }}</span>
         </div>
     </div>
