@@ -23,6 +23,8 @@ services:
     build:
       context: ./sa-frontend
       dockerfile: Dockerfile
+      args:
+        VUE_APP_API_HOST: http://127.0.0.1:8080
     depends_on:
       - webapp
     ports:
