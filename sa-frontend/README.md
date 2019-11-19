@@ -5,6 +5,6 @@
 Sentiment analyzer frontend project, create by Vue.js.
 
 ## Play with Docker
-Build the docker image with this command `docker build -t sa-frontend:1.0.0 .`
+Build the docker image with this command `docker build -t sa-frontend:1.0.0 --build-arg VUE_APP_API_HOST=http://you_sa_webapp  .`
 
 Start this project with this command `docker run --rm -p 3000:80 sa-frontend:1.0.0`.
