@@ -28,4 +28,4 @@ Open your web browser and access `http://127.0.0.1:3000`.
 Stop project with this command `docker-compose down -v`.
 
 ## Screenshot
-![Screenshot](screenshot.png?raw=true "screenshot")
+![Screenshot](screenshot.gif?raw=true "screenshot")
