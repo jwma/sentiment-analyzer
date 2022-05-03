@@ -8,9 +8,9 @@
 不久前受到[一篇文章](https://medium.com/free-code-camp/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882)的启发，所以我也将会开发一个类似的项目。
 
 项目搭配我写的这三篇分享文章服用，效果更佳哦：
-1. [扬帆前夜](http://t.anmuji.com/sspyar)
-2. [Kubernetes 短途旅行（上）](http://t.anmuji.com/myn6l8)
-3. [Kubernetes 短途旅行（下）](http://t.anmuji.com/8qy22u)
+1. [扬帆前夜](https://t.majiawei.com/sspyar)
+2. [Kubernetes 短途旅行（上）](https://t.majiawei.com/myn6l8)
+3. [Kubernetes 短途旅行（下）](https://t.majiawei.com/8qy22u)
 
 技术栈：
 - Python
